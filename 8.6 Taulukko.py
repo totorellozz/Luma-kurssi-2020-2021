@@ -1,10 +1,13 @@
 taulukko = []
 
-x = int(input("Monta asiaa vain numeroita : "))
+x = int(input("Monta asiaa haluat laittaa listaan? : "))
 
-for i in range(0, x):
-    ele = int(input())
+for i in range(x):
+    lst = input("Kirjoit asiat: ")
 
-    taulukko.append(ele)
+    taulukko.append(lst)
 
-print(taulukko)
+print('\n'*25)
+
+for taulukko in taulukko:
+    print(taulukko)
