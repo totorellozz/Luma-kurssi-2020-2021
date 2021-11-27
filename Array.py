@@ -1,20 +1,34 @@
-taulukko = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-print(taulukko)
+taulukko = ['Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai', 'Sunnuntai']
 
-paiva = int(input("What day is it? "))
+paiva = int(input("Mikä päivä tänään on numeroina: "))
 
-if paiva == 1:
-    print('Today is', taulukko[0])
-if paiva == 2:
-    print('Today is', taulukko[1])
-if paiva == 3:
-    print('Today is', taulukko[2])
-if paiva == 4:
-    print('Today is', taulukko[3])
-if paiva == 5:
-    print('Today is', taulukko[4])
-if paiva == 6:
-    print('Today is', taulukko[5])
-if paiva == 7:
-    print('Today is', taulukko[6])
+match paiva:
+    case 1:
+        print('Tänään on Maanantai')
+    case 2:
+        print('Tänään on Tiistai.')
+    case 3:
+        print('Tänään on Keskiviikko.')
+    case 4:
+        print('Tänään on Torstai.')
+    case 5:
+        print('Tänään on Perjantai.')
+    case 6:
+        print('Tänään on Lauantai.')
+    case 7:
+        print('Tänään on Sunnuntai.')
 
+# if paiva == 1:
+#     print('Tänään on Maanantai')
+# if paiva == 2:
+#     print('Tänään on Tiistai.')
+# if paiva == 3:
+#     print('Tänään on Keskiviikko.')
+# if paiva == 4:
+#     print('Tänään on Torstai.')
+# if paiva == 5:
+#     print('Tänään on Perjantai.')
+# if paiva == 6:
+#     print('Tänään on Lauantai.')
+# if paiva == 7:
+#     print('Tänään on Sunnuntai.')
